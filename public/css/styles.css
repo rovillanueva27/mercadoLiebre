@@ -1,0 +1,291 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+.main-header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-top: 5px;
+}
+
+.logo{
+    width:50%;
+    max-width: 200px;
+    padding-left: 20px;
+}
+
+.barra-busqueda{
+    display: flex;
+    width: 50%;
+    text-align: center;
+    justify-content: space-around;
+    border:1px solid black;
+    height: fit-content;
+    background-color: white;
+}
+
+.barra-busqueda input{
+    width: 85%;
+    display: inline-block;
+    border: none;
+}
+.barra-busqueda button{
+    border: none;
+    background-color: #FFF;
+}
+
+.copy-header{
+    font-size: 15px;
+    text-align: center;
+}
+
+.burger-menu{
+    background-color: #1259c3;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 17px;
+    margin: auto;
+}
+
+.main-navbar{
+    display: none;
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-navbar{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    justify-content: space-around;
+}
+
+.list-navbar li a{
+    font-size: 8px;
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.banner{
+    width: 100%;
+    position: relative;
+    top:5px
+}
+
+main{
+    width: 90vw;
+    margin: auto;
+    align-content: center;
+    text-align: left;
+    background-color: #ebebeb;
+}
+
+main section article{
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: white;
+    width: 99%;
+}
+
+.product-box{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+section h2{
+    font-size: 24px;
+}
+
+.caja-truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color:#39b54a;
+}
+
+.info-product{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-product .precios{
+    font-size: 18px;
+    width: 30%;
+}
+
+.info-product .descuentos{
+    font-size: 16px;
+    color:#39b54a;
+    width: 70%;
+    text-align: center;
+    padding-top: 3px;
+    padding-left: 5px;
+}
+
+.info-product .descripciones{
+    font-size: 16px;
+    color: #666;
+}
+
+
+.seccion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer{
+    padding: 30px;
+    text-align: center;
+    margin-top: 60px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+footer h3{
+    color:#000000;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+footer p{
+    color: #666;
+    font-size: 12px;
+    line-height: normal;
+    margin: 0;
+}
+
+.icon-footer{
+    font-size: 2em;
+    color: #1259c3;
+    margin-top: 20px;
+    margin: auto;
+}
+
+.main-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+
+@media (min-width: 361px){
+    .main-navbar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;    
+    }
+    .copy-header{
+        font-size: 8px;
+    }
+    .logo{
+        width:30%;
+    }
+    .barra-busqueda{
+        width: 30%;
+    }
+    .copy-header{
+        width: 30%;
+    }
+    .descripciones{
+        display: none;
+    }
+
+    .precios{
+        font-size: 15px;
+     }
+    .descuentos{
+        font-size: 13px;
+    }
+    .descripciones{
+        font-size: 12px;
+    }
+    
+    .burger-menu{
+        display: none;
+    }
+}
+
+@media (min-width: 769px){
+    main section article{
+        width: 23%;
+    }
+    .info-product .descripciones{
+        display: none;
+    }
+     .info-product:hover .descripciones{
+        display: block;
+    }
+    .copy-header{
+        font-size: 12px;
+    }
+    .list-navbar li a{
+        font-size: 12px;
+    }
+
+    main section article{
+        transition: box-shadow 0.3s ease;
+    }    
+    
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }    
+    
+    .caja-truck{
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+    .caja-truck:hover{
+        transform: rotate(-90deg);
+    }
+    .main-footer div{
+        width: 30%;
+    }
+    .copy{
+        text-align: start;
+    }
+}

@@ -1,0 +1,366 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+.main-header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-top: 5px;
+}
+
+.logo{
+    width:50%;
+    max-width: 200px;
+    padding-left: 20px;
+}
+
+.barra-busqueda{
+    display: flex;
+    width: 50%;
+    text-align: center;
+    justify-content: space-around;
+    border:1px solid black;
+    height: fit-content;
+    background-color: white;
+}
+
+.barra-busqueda input{
+    width: 85%;
+    display: inline-block;
+    border: none;
+}
+.barra-busqueda button{
+    border: none;
+    background-color: #FFF;
+}
+
+.copy-header{
+    font-size: 15px;
+    text-align: center;
+}
+
+.burger-menu{
+    background-color: #1259c3;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 17px;
+    margin: auto;
+}
+
+.main-navbar{
+    display: none;
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-navbar{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    justify-content: space-around;
+}
+
+.list-navbar li a{
+    font-size: 8px;
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form .nombre{
+    position: relative;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.nombre input[type="text"]{
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 25vw;
+    padding-left: 10px;
+}
+
+form .usuario{
+    position: relative;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.usuario input[type="text"]{
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 25vw;
+    padding-left: 10px;
+}
+
+form .email{
+    position: relative;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.email input[type="email"]{
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 25vw;
+    padding-left: 10px;
+}
+
+
+form .fecha{
+    position: relative;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.fecha input[type="date"]{
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 25vw;
+    padding-left: 10px;
+}
+
+form .domicilio{
+    position: relative;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.domicilio input[type="text"]{
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 25vw;
+    padding-left: 10px;
+}
+
+.perfil h4{
+    text-align: left;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+form .perfil label{
+    margin: 10px;
+  
+}
+.perfil input[type="radio"]{
+    margin-right: 30px;
+}
+
+.checks{
+    display: flex;
+    flex-direction: column;
+}
+form .intereses h4{
+    text-align: left;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.intereses input[type="checkbox"]{
+    margin-right: 15px;
+    flex-direction: column;
+}
+
+.foto h4{
+    text-align: left;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+form .foto{
+    position: relative;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.contraseña h4{
+    text-align: left;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+form .contraseña{
+    position: relative;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.contraseña input[type="password"]{
+    border: none;
+    border-radius: 5px;
+    height: 32px;
+    width: 25vw;
+    padding-left: 10px;
+}
+
+form .enviar{
+    position: relative;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.enviar input[type="submit"]{
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+form .borrar{
+    position: relative;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.borrar input[type="reset"]{
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+footer{
+    padding: 30px;
+    text-align: center;
+    margin-top: 60px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+footer h3{
+    color:#000000;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+footer p{
+    color: #666;
+    font-size: 12px;
+    line-height: normal;
+    margin: 0;
+}
+
+.icon-footer{
+    font-size: 2em;
+    color: #1259c3;
+    margin-top: 20px;
+    margin: auto;
+}
+
+.main-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 361px){
+    .main-navbar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;    
+    }
+    .copy-header{
+        font-size: 8px;
+    }
+    .logo{
+        width:30%;
+    }
+    .barra-busqueda{
+        width: 30%;
+    }
+    .copy-header{
+        width: 30%;
+    }
+    .descripciones{
+        display: none;
+    }
+
+    .precios{
+        font-size: 15px;
+     }
+    .descuentos{
+        font-size: 13px;
+    }
+    .descripciones{
+        font-size: 12px;
+    }
+    
+    .burger-menu{
+        display: none;
+    }
+}
+
+@media (min-width: 769px){
+    main section article{
+        width: 23%;
+    }
+    .info-product .descripciones{
+        display: none;
+    }
+     .info-product:hover .descripciones{
+        display: block;
+    }
+    .copy-header{
+        font-size: 12px;
+    }
+    .list-navbar li a{
+        font-size: 12px;
+    }
+
+    main section article{
+        transition: box-shadow 0.3s ease;
+    }    
+    
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }    
+    
+    .caja-truck{
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+    .caja-truck:hover{
+        transform: rotate(-90deg);
+    }
+    .main-footer div{
+        width: 30%;
+    }
+    .copy{
+        text-align: start;
+    }
+}
