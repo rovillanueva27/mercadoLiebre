@@ -31,8 +31,8 @@
                 </ul> 
 
                 <ul class="list-navbar">
-                        <li> <a href="">Creá tu cuenta  <i class="fa-regular fa-id-card"></i></a> 
-                        <li> <a href="">Ingresá  <i class="fa-solid fa-right-to-bracket"></i></a> 
+                        <li> <a href="/register">Creá tu cuenta  <i class="fa-regular fa-id-card"></i></a> 
+                        <li> <a href="/login">Ingresá  <i class="fa-solid fa-right-to-bracket"></i></a> 
                         <li> <a href="">Mis compras <i class="fa-solid fa-basket-shopping"></i></a> 
                 </ul>                                
             </nav>
@@ -40,24 +40,24 @@
 
     <main>
 
-        <form action="">
+        <form action="/">
             <div class="nombre">
-                <input type="text" placeholder="Nombre y apellido" name="nombre" id="nombre">
+                <input type="text" placeholder="Nombre y apellido" name="nombre" id="nombre" required>
         </div>
         <div class="usuario">
-            <input type="text" placeholder="Nombre de usuario" name="usuario" id="usuario">
+            <input type="text" placeholder="Nombre de usuario" name="usuario" id="usuario" required>
         </div>
         <div class="email">
-            <input type="email" placeholder="E-mail" name="email" id="email">
+            <input type="email" placeholder="E-mail" name="email" id="email" required>
         </div>
         <div class="fecha">
             <h4>Fecha de nacimiento</h4>
             <label for="nacimiento">
-                <input type="date" name="fecha-de-nacimiento" id="nacimiento">
+                <input type="date" name="fecha-de-nacimiento" id="nacimiento" required>
             </label>
         </div>
         <div class="domicilio">
-            <input type="text" placeholder="domicilio" name="domicilio" id="domicilio">
+            <input type="text" placeholder="domicilio" name="domicilio" id="domicilio" required>
         </div>
         <div class="perfil">
             <h4>Perfil de usuario</h4>
@@ -68,9 +68,8 @@
                     <input type="radio" name="perfil-usuario" id="perfil">Vendedor
                 </label>
         </div>
-        <div class="intereses">
-            <h4>Intereses</h4>
-            <div class="checks">
+            <div class="intereses">
+                <h4>Intereses</h4>
                 <label for="interes">
                     <input type="checkbox" name="interes" id="interes">Electro
                 </label>
@@ -87,18 +86,18 @@
                     <input type="checkbox" name="interes" id="interes">Vida sana
                 </label>
             </div>
-        </div>
-        <div class="foto">
-            <h4>Foto de perfil</h4>
+        
+            <div class="foto">
+                <h4>Foto de perfil</h4>
             <input type="file" name="foto-perfil" id="foto" accept=".jpg">
         </div>
         <div class="contraseña">
             <h4>Contraseña</h4>
-            <input type="password" name="contraseña" id="contraseña">
+            <input type="password" name="contraseña" id="contraseña" required>
             <br>
             <div class="confirmar">
                 <h4>Confirmar contraseña</h4>   
-                <input type="password" name="contraseña" id="contraseña">
+                <input type="password" name="contraseña" id="contraseña" required>
             </div>
         </div>
         <div class="enviar">

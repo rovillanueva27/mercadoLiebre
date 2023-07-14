@@ -9,16 +9,106 @@ body{
     background-color: #ebebeb;
 }
 
+header{
+    background-color: #EAC926;
+}
+
+.main-header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-top: 5px;
+}
+
+.logo{
+    width:50%;
+    max-width: 200px;
+    padding-left: 20px;
+}
+
+.barra-busqueda{
+    display: flex;
+    width: 50%;
+    text-align: center;
+    justify-content: space-around;
+    border:1px solid black;
+    height: fit-content;
+    background-color: white;
+}
+
+.barra-busqueda input{
+    width: 85%;
+    display: inline-block;
+    border: none;
+}
+.barra-busqueda button{
+    border: none;
+    background-color: #FFF;
+}
+
+.copy-header{
+    font-size: 15px;
+    text-align: center;
+}
+
+.burger-menu{
+    background-color: #1259c3;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 17px;
+    margin: auto;
+}
+
+.main-navbar{
+    display: none;
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-navbar{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    justify-content: space-around;
+}
+
+.list-navbar li a{
+    font-size: 8px;
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
+}
+
+span{
+    font-size: 10px;
+    color: red;
 }
 
 form .usuario{
     position: relative;
-    margin: 15px;
-    padding-bottom: 10px;
+    margin-top: 15px;
 }
 .usuario input[type="text"]{
     border: none;
@@ -30,8 +120,7 @@ form .usuario{
 
 form .contraseña{
     position: relative;
-    margin:15px;
-    padding-bottom: 10px;
+    margin-top:15px;
 }
 .contraseña input[type="password"]{
     border: none;
@@ -54,3 +143,81 @@ form .enviar{
     background-color:#1259c3;
 }
 
+footer{
+    padding: 30px;
+    text-align: center;
+    margin-top: 60px;
+    background-color: white;
+}
+
+footer h3{
+    color:#000000;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+footer p{
+    color: #666;
+    font-size: 12px;
+    line-height: normal;
+    margin: 0;
+}
+
+.icon-footer{
+    font-size: 2em;
+    color: #1259c3;
+    margin-top: 20px;
+    margin: auto;
+}
+
+.main-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 361px){
+    .main-navbar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;    
+    }
+    .copy-header{
+        font-size: 8px;
+    }
+    .logo{
+        width:30%;
+    }
+    .barra-busqueda{
+        width: 30%;
+    }
+    .copy-header{
+        width: 30%;
+    }
+    .burger-menu{
+        display: none;
+    }
+}
+
+@media (min-width: 769px){
+    .copy-header{
+        font-size: 12px;
+    }
+    .list-navbar li a{
+        font-size: 12px;
+    }
+    .main-footer div{
+        width: 30%;
+    }
+    .copy{
+        text-align: start;
+    }
+    .enviar input{
+        transition: background-color 0.3s ease;
+    }
+    .enviar input:hover {
+        background-color:#0022AA;
+      }
+}
